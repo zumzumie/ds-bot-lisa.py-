@@ -10,7 +10,7 @@ from riotwatcher import LolWatcher, ApiError
 from datetime import date 
 
 
-
+#
 bot = commands.Bot(command_prefix = '>', intents = discord.Intents.all(), help_command = None)
 
 pics_array = {}
