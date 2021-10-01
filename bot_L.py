@@ -1,12 +1,15 @@
-import discord, random, json, riotwatcher, datetime 
+import discord
+import random
+import json
+import riotwatcher
+import datetime
 
 from discord.ext import commands
-
 from discord.utils import find
-
 from riotwatcher import LolWatcher, ApiError
-
 from datetime import date 
+
+
 
 bot = commands.Bot(command_prefix = '>', intents = discord.Intents.all(), help_command = None)
 
@@ -207,6 +210,8 @@ async def test(ctx):
                 await user.send('ку')
             except: # dont send msg if user close hes DM
                 pass    
+
+
 @bot.command()
 async def doodle(ctx, *, message ):
         ds_symbols = ['**' , '||' , "~~", "__"]
@@ -216,7 +221,7 @@ async def doodle(ctx, *, message ):
             new_message += symbol + char + symbol
             if char == ' ':
                 continue
-            
+
         await ctx.send(new_message)
 
     
