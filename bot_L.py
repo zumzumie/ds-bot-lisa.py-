@@ -217,13 +217,14 @@ async def doodle(ctx, *, message ):
         ds_symbols = ['**' , '||' , "~~", "__"]
         new_message = ''
         for char in message:
+            if char = " ":
+                continue
             symbol = random.choice(ds_symbols)
             new_message += symbol + char + symbol
-            if char == ' ':
-                continue
+            
 
         await ctx.send(new_message)
-
+#
     
 
 
